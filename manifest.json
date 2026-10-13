@@ -1,25 +1,20 @@
 {
   "name": "Anime Word",
   "short_name": "Anime Word",
-  "description": "Notícias, rumores identificados, episódios, temporadas e filmes de anime.",
   "start_url": "./index.html",
-  "scope": "./",
   "display": "standalone",
   "background_color": "#090909",
   "theme_color": "#090909",
-  "lang": "pt",
   "icons": [
     {
-      "src": "assets/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "assets/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }

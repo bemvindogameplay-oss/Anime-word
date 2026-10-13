@@ -1,25 +1,8 @@
-ANIME WORD — PROTÓTIPO V3 (identidade visual atualizada)
+ANIME WORD — pacote atualizado
+Inclui capa principal, ícones, notícias iniciais com imagens gráficas ilustrativas para cada anime, filtros de confirmação, pesquisa, favoritos, lista de animes acompanhados, definições com o nome do criador e um ecrã de alertas.
 
-Inclui:
-- Interface mobile preta e dourada.
-- Logótipo/arte promocional atualizada e ícones 192x192 e 512x512.
-- Pesquisa, filtros Confirmadas/Rumores/Por verificar, notícias demonstrativas.
-- Lista de animes favoritos e preferências de alertas.
-- Painel local de administração.
-- Manifest PWA configurado para instalação pelo navegador compatível.
-
-IMPORTANTE:
-Este ZIP ainda NÃO é um APK Android. É o projeto web/PWA atualizado.
-As notícias são demonstrações, não são notícias reais atualizadas.
-O painel grava apenas no navegador local; não tem servidor nem autenticação segura.
-Notificações push em segundo plano e recolha automática de notícias exigem backend, fontes/API, verificação e configuração de push.
-
-TESTE LOCAL:
-1. Extraia o ZIP.
-2. Abra index.html num navegador para testar a interface.
-3. Para instalação PWA, o projeto precisa de ser publicado num endereço HTTPS.
-
-PRÓXIMA FASE PARA APK:
-Empacotar a aplicação web num projeto Android (por exemplo, Capacitor), instalar dependências e compilar com Android SDK/Gradle. Este ambiente não tem Gradle/Android SDK disponível, portanto não foi gerado APK nesta etapa.
-
-Nota de marca: confirme os direitos de uso comercial de personagens e marcas de anime antes de publicar.
+NOTA IMPORTANTE:
+- As imagens em covers/ são artes gráficas ilustrativas por categoria e NÃO são capas oficiais nem retratos exatos dos personagens.
+- As notícias são entradas iniciais com links para fontes. Não há atualização automática em tempo real neste pacote.
+- A opção de notificações só testa permissão local; notificações push automáticas exigem backend.
+- Para criar APK com o GitHub Actions, envie todo o conteúdo desta pasta www para a pasta www do projeto/repositório, preservando a pasta covers e substituindo index.html, manifest.json e os ícones. O projeto Capacitor deve apontar para webDir: 'www'.
