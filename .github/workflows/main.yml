@@ -28,10 +28,13 @@ jobs:
       - name: Prepare web files
         run: |
           mkdir -p www
-          for file in index.html admin.html LEIA-ME.txt manifest.json sw.js icon-192.png icon-512.png anime-word-poster.png; do
+          for file in index.html admin.html LEIA-ME.txt manifest.json sw.js icon-192.png icon-512.png anime-word-poster anime-word-poster.jpg.png; do
             if [ -f "$file" ]; then
               cp "$file" www/
             fi
+           if [ -d covers ]; then
+  cp -r covers www/
+fi
           done
           if [ -d assets ]; then
             cp -r assets www/
