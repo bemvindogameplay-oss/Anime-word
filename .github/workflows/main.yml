@@ -9,6 +9,7 @@ name: Build ANIME WORD APK
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,12 +18,24 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21'
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Prepare web files
+        run: |
+          mkdir -p www
+          for file in index.html admin.html LEIA-ME.txt manifest.json sw.js icon-192.png icon-512.png anime-word-poster.png; do
+            if [ -f "$file" ]; then
+              cp "$file" www/
+            fi
+          done
+          if [ -d assets ]; then
+            cp -r assets www/
+          fi
 
       - name: Install dependencies
         run: npm install
@@ -32,7 +45,8 @@ jobs:
           npx cap add android
           npx cap sync android
           cd android
-          gradle assembleDebug
+          chmod +x gradlew
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
