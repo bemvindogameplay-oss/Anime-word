@@ -1,0 +1,24 @@
+ANIME WORD — BASE PREPARADA PARA ANDROID
+Criador: Bemvindo Luemba
+
+ESTADO DESTA VERSÃO
+- Inclui os ficheiros da aplicação web e a identidade visual preta/dourada.
+- Inclui a configuração inicial para empacotar com Capacitor.
+- A área Definições > Criador mostra “Bemvindo Luemba”.
+- ESTE ZIP AINDA NÃO É UM APK. Não foi possível compilar o APK neste ambiente porque não tem Android SDK nem Gradle instalados.
+- As notícias atuais são demonstrativas; notícias automáticas e push real precisam de fontes/API e backend.
+
+COMO GERAR O APK NUM COMPUTADOR COM ANDROID STUDIO
+Requisitos: Node.js LTS, Android Studio com Android SDK, e JDK compatível com a versão do Android Gradle Plugin.
+
+1. Extraia este ZIP.
+2. Abra um terminal dentro da pasta anime_word_android.
+3. Execute: npm install
+4. Execute: npx cap add android
+5. Execute: npx cap sync android
+6. Execute: npx cap open android
+7. No Android Studio, aguarde a sincronização do Gradle e escolha Build > Build Bundle(s) / APK(s) > Build APK(s).
+8. O Android Studio indicará onde guardou o APK gerado.
+
+NOTA
+A primeira compilação pode exigir internet para descarregar dependências. Teste a aplicação no seu dispositivo antes de distribuir. Antes de publicar, confirme direitos de uso das imagens/personagens de anime.

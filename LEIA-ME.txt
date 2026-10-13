@@ -1,0 +1,25 @@
+ANIME WORD — PROTÓTIPO V3 (identidade visual atualizada)
+
+Inclui:
+- Interface mobile preta e dourada.
+- Logótipo/arte promocional atualizada e ícones 192x192 e 512x512.
+- Pesquisa, filtros Confirmadas/Rumores/Por verificar, notícias demonstrativas.
+- Lista de animes favoritos e preferências de alertas.
+- Painel local de administração.
+- Manifest PWA configurado para instalação pelo navegador compatível.
+
+IMPORTANTE:
+Este ZIP ainda NÃO é um APK Android. É o projeto web/PWA atualizado.
+As notícias são demonstrações, não são notícias reais atualizadas.
+O painel grava apenas no navegador local; não tem servidor nem autenticação segura.
+Notificações push em segundo plano e recolha automática de notícias exigem backend, fontes/API, verificação e configuração de push.
+
+TESTE LOCAL:
+1. Extraia o ZIP.
+2. Abra index.html num navegador para testar a interface.
+3. Para instalação PWA, o projeto precisa de ser publicado num endereço HTTPS.
+
+PRÓXIMA FASE PARA APK:
+Empacotar a aplicação web num projeto Android (por exemplo, Capacitor), instalar dependências e compilar com Android SDK/Gradle. Este ambiente não tem Gradle/Android SDK disponível, portanto não foi gerado APK nesta etapa.
+
+Nota de marca: confirme os direitos de uso comercial de personagens e marcas de anime antes de publicar.

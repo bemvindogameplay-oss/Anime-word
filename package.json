@@ -1,0 +1,19 @@
+{
+  "name": "anime-word-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anime Word Android wrapper using Capacitor",
+  "scripts": {
+    "web:copy": "node -e \"console.log('Os ficheiros web estão em www/')\"",
+    "android:add": "cap add android",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
